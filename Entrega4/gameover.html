@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Game Over</title>
+		<style>
+			body {
+			      margin: 0px;
+                  background-color: black;
+			      overflow: hidden;
+                  display: block;
+			}
+            p {
+                text-align: center;
+                color: white;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-stretch: ultra-expanded;
+                font-size: xx-large;
+            }
+            pe {
+                text-align: center;
+                color: white;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+		</style>
+	</head>
+	<body>
+		<script>
+            window.addEventListener("keydown", onKeyDown);
+            function onKeyDown(e) {
+                switch (e.keyCode) {
+                    case 82://R
+                    case 114://r
+                        window.location.href = "index.html";
+                        break;
+                }
+            }
+		</script>
+        <p>GAME OVER LOSER</p>
+        <pe>press R to restart</pe>
+	</body>
+</html>
